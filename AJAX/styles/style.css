@@ -6,12 +6,22 @@
 }
 body {
 	background-color: #182d3d;
+	overflow-x: hidden;
 }
-
+header {
+	height: 80px;
+	padding-block: 5px;
+	background-color: #132431;
+	width: 100vw;
+}
+header img {
+	height: 70px;
+	transform: translateX(20vw);
+}
 #app {
 	width: 60vw;
+	padding-block: 80px;
 	margin-inline: auto;
-	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 }

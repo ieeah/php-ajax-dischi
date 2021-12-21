@@ -12,23 +12,28 @@
 <body>
 	<!-- including DB -->
 	<?php
-	var_dump(__DIR__);
 	include __DIR__ . '/../data/database.php';
 	?>
+	<header>
+		<img src="../assets/logo.png" alt="">
+	</header>
 	<!-- printing the cards -->
-	<?php foreach ($database as $key => $value) : ?>
-		<div>
-			<div class="top">
-				<img src="<?php echo $value['poster'] ?>" alt="">
+	<div class="container">
+		<?php foreach ($database as $key => $value) : ?>
+			<div class="album">
+				<div class="top">
+					<img src="<?php echo $value['poster'] ?>" alt="">
+				</div>
+				<div class="bottom">
+					<h5><?php echo $value['title'] ?></h5>
+					<div class="author"><?php echo $value['author'] ?></div>
+					<h6><?php echo $value['year'] ?> </h6>
+					<div class="genre"><?php echo $value['genre'] ?></div>
+				</div>
 			</div>
-			<div class="bottom">
-				<h5><?php echo $value['title'] ?></h5>
-				<div><?php echo $value['author'] ?></div>
-				<h6><?php echo $value['year'] ?> </h6>
-				<div><?php echo $value['genre'] ?></div>
-			</div>
-		</div>
-	<?php endforeach; ?>
+		<?php endforeach; ?>
+	</div>
+
 
 
 
