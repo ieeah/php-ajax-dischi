@@ -12,22 +12,22 @@
 <body>
 	
 	<div id="app">
-		<div v-for="(album, i) in albums">
+		<div class="album" v-for="(album, i) in albums">
 			<div class="top">
-				<img src="" alt="">
+				<img :src="album.poster" alt="">
 			</div>
 			<div class="bottom">
 				<h5>
-					
+					{{album.title}}
 				</h5>
-				<div>
-					
+				<div class="author">
+					{{album.author}}
 				</div>
 				<h6>
-					
+					{{album.year}}
 				</h6>
-				<div>
-					
+				<div class="genre">
+					{{album.genre}}
 				</div>
 			</div>
 		</div>

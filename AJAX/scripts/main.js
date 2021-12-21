@@ -10,11 +10,11 @@ const app = new Vue({
 	},
 	methods: {
 		getAlbums() {
-			axios.get('https://flynn.boolean.careers/exercises/api/array/music').then(response => {
-				console.log(response.data);
+			axios.get('http://localhost/php-ajax-dischi/AJAX/scripts/database.php').then(response => {
 				this.albums = response.data;
 				console.log(this.albums);
 			});
 		},
 	},
 });
+
