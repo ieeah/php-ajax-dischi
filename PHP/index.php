@@ -24,7 +24,7 @@
 			<div class="bottom">
 				<h5><?php echo $value['title'] ?></h5>
 				<div><?php echo $value['author'] ?></div>
-				<h6><?php echo $value['year'] ?>
+				<h6><?php echo $value['year'] ?> </h6>
 				<div><?php echo $value['genre'] ?></div>
 			</div>
 		</div>
